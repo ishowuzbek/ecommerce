@@ -51,6 +51,7 @@ public class LoginServlet extends HttpServlet {
                 }
             }
         }else {
+            System.out.println("p");
             resp.sendRedirect("signup.jsp?userId="+userId);
         }
     }
