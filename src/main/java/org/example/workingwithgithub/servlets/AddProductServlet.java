@@ -18,7 +18,7 @@ import java.util.UUID;
 @WebServlet("/product/add")
 @MultipartConfig
 public class AddProductServlet extends HttpServlet {
-    String absolutePath = "D:/javanew/Ecom/files/";
+    String absolutePath = "D:/javanew/WorkingWithGitHub/files/";
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
