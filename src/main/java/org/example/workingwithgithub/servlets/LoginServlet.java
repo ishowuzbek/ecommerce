@@ -32,7 +32,7 @@ public class LoginServlet extends HttpServlet {
             User userDB = user.get();
             if (userDB.getRole().equals("admin")) {
                 req.getSession().setAttribute("user", userDB);
-                resp.sendRedirect("admin.jsp");
+                resp.sendRedirect("/admin");
             }else {
                 for (BasketProduct basketProduct : DB.BASKET_PRODUCTS.stream().filter(basketProduct -> basketProduct.getUserId().equals(userId)).toList()) {
                     DB.BASKET_PRODUCTS.add(new BasketProduct(
